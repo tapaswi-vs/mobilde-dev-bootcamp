@@ -1,6 +1,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/screens/login_screen.dart';
+import 'package:flutter_app_demo/screens/signup_screen.dart';
 import 'package:flutter_app_demo/screens/widgets_screen.dart';
 
 void main() {
@@ -28,7 +30,22 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // routes: {
+      //   '/': (context) => const LoginScreen(),
+      //   '/register': (context) => SignupForm(),
+      //
+      // },
+      // initialRoute: '/',
+      // onGenerateRoute: (settings){
+      //   switch(settings.name){
+      //     case '/login':
+      //       // final value = settings.arguments as int; // Retrieve the value.
+      //       // return MaterialPageRoute(builder: (_) => BarPage(value)); // Pass it to BarPage.
+      //     default:
+      //       // return some default pages like 404
+      //   }
+      // },
+      home: const LoginScreen(),
     );
   }
 }
